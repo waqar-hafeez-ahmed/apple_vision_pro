@@ -402,44 +402,52 @@ function canvas2() {
   const context = canvas.getContext("2d");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+
   window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     render();
   });
+
   function files(index) {
     return `./assets/Apple vision canvas images/Vision${String(
       index + 1
     ).padStart(5, "0")}.png`;
   }
+
   const frameCount = 25;
   const images = [];
   const imageSeq = {
     frame: 0,
   };
+
   for (let i = 0; i < frameCount; i++) {
     const img = new Image();
     img.src = files(i);
     images.push(img);
   }
+
   gsap.to(imageSeq, {
     frame: frameCount - 1,
     snap: "frame",
-    ease: "none",
+    ease: `none`,
     scrollTrigger: {
-      scrub: 0.5,
-      trigger: ".technology-content",
-      start: "bottom bottom", // Changed from "top top" to "bottom bottom"
-      end: "300% bottom",
-      markers: true,
-      scroller: "#main",
+      scrub: 0.001,
+      trigger: `#tech-canvas`,
+      //   set start end according to preference
+      start: `top 20%`,
+      end: `90% 30%`,
+      scroller: `#main`,
     },
     onUpdate: render,
   });
-  images[0].onload = render;
+
+  images[1].onload = render;
+
   function render() {
-    scaleImage(images[Math.floor(imageSeq.frame)], context);
+    scaleImage(images[imageSeq.frame], context);
   }
+
   function scaleImage(img, ctx) {
     var canvas = ctx.canvas;
     var hRatio = canvas.width / img.width;
@@ -461,12 +469,14 @@ function canvas2() {
     );
   }
   ScrollTrigger.create({
-    trigger: ".technology-content",
+    trigger: "#tech-canvas",
     pin: true,
-    scroller: "#main",
-    start: "200% bottom", // Changed from "bottom top" to "bottom bottom"
     markers: true,
-    end: "300% bottom",
+    scroller: `#main`,
+    //   set start end according to preference
+    start: `top top`,
+    end: `80% 20%`,
   });
 }
+
 canvas2();
