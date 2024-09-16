@@ -85,6 +85,7 @@ createVideoAnimation("#memories>video");
 createVideoAnimation("#connections>video");
 createVideoAnimation("#apps>video");
 createVideoAnimation("#visionOS>video");
+createVideoAnimation("#spatial-audio>video");
 
 createContentAnimation("#foundations", "#foundation-content", -250);
 createContentAnimation("#entertainment", "#entertainment-content", -250);

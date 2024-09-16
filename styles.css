@@ -632,6 +632,18 @@ nav #buy {
   z-index: 100;
 }
 
+.technology-content2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  text-align: center;
+  margin: 0 auto;
+  /* min-height: 100vh;
+  z-index: 100; */
+}
 .technology h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -660,6 +672,16 @@ nav #buy {
   /* z-index: 100; */
 }
 
+.technology h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 50%;
+
+  line-height: 2.5em;
+  /* z-index: 100; */
+}
+
 .technology p span {
   color: #ffff;
 }
@@ -681,4 +703,63 @@ nav #buy {
   width: 100%;
 
   /* object-fit: cover; */
+}
+
+#spatial-audio video {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relative {
+  position: relative;
+  height: 80vh;
+}
+.technology-content3 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-bottom: 5rem;
+  text-align: left;
+  margin: 0 auto;
+  top: -30%;
+  right: -20%;
+  max-width: 60%;
+  gap: 2rem;
+  line-height: 1em;
+  z-index: 100;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 50%;
+  line-height: 2rem;
+}
+
+.eye_tracking {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+
+  background-color: black;
+}
+
+.eye_tracking img {
+  /* position: absolute;
+  top: 0; */
+  margin: 0 auto;
+  width: 65%;
+  height: 100%;
+  object-fit: contain;
+  /* opacity: 0.5; */
 }
