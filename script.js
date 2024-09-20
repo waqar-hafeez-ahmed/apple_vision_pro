@@ -472,7 +472,7 @@ function canvas2() {
   ScrollTrigger.create({
     trigger: "#tech-canvas",
     pin: true,
-    markers: true,
+    // markers: true,
     scroller: `#main`,
     //   set start end according to preference
     start: `top top`,
@@ -481,3 +481,35 @@ function canvas2() {
 }
 
 canvas2();
+
+const images = document.querySelectorAll(".sensors");
+let currentIndex = 0;
+
+function showNextImage() {
+  images.forEach((img, index) => {
+    img.classList.remove("active");
+    if (index === currentIndex) {
+      img.classList.add("active");
+    }
+  });
+
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+setInterval(showNextImage, 2000); // Change every 3 seconds
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// gsap.to(".sensor_chips img", {
+//   opacity: 0.1,
+//   scrollTrigger: {
+//     trigger: ".sensor_chips",
+//     start: "top bottom", // When the top of the trigger hits the bottom of the viewport
+//     end: "center center", // When the center of the trigger hits the center of the viewport
+//     scrub: true, // Smoothly animate as you scroll
+//     markers: true, // Optional: Show scroll triggers for debugging
+//   },
+//   opacity: 0.5,
+
+//   ease: "none", // Linear easing
+// });
