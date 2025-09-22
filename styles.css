@@ -1171,3 +1171,573 @@ hr {
   color: #666;
   display: inline;
 }
+
+/* RESPONSIVE STYLES - Add these to your existing styles.css */
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  /* Navigation */
+  nav {
+    width: 90vw;
+    padding: 0 15px;
+  }
+
+  nav h3 {
+    font-size: 18px;
+  }
+
+  /* Hero Section */
+  #page1 video {
+    width: 60%;
+  }
+
+  #hero-content {
+    width: 30%;
+  }
+
+  #hero-content h3 {
+    font-size: 20px;
+  }
+
+  /* Foundation Content */
+  #foundation-content h1 {
+    font-size: 5vh;
+  }
+
+  /* Product Tour */
+  .logo {
+    width: 30vw;
+  }
+
+  #scroll-video {
+    width: 70%;
+  }
+
+  /* Learn More Sections */
+  .learn-more {
+    width: 90%;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+  }
+
+  .learn-more h2 {
+    max-width: 100%;
+    font-size: 1.8rem;
+  }
+
+  .learn-more-section {
+    width: 100%;
+  }
+
+  /* Content Sections */
+  #entertainment-content h1,
+  #productivity-content h1,
+  #memories-content h1,
+  #connections-content h1,
+  #apps-content h1,
+  #visionOS-content h1 {
+    font-size: 4em;
+    max-width: 90%;
+  }
+
+  /* Design Section */
+  .design-content h1 {
+    font-size: 4em;
+  }
+
+  .design-content p {
+    max-width: 85%;
+  }
+
+  /* Canvas Text Overlays */
+  #cpage1 > h1,
+  #cpage2 > h1,
+  #cpage3 > h1,
+  #cpage4 > h1,
+  #cpage5 > h1,
+  #cpage6 > h1 {
+    max-width: 25%;
+    font-size: 1.1em;
+  }
+
+  /* Technology Section */
+  .technology h1 {
+    font-size: 4em;
+    max-width: 80%;
+  }
+
+  .technology p {
+    max-width: 70%;
+  }
+
+  /* Banners */
+  .banner1 {
+    width: 95vw;
+    padding: 5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content,
+  .banner-img {
+    width: 100%;
+  }
+
+  .banner1 h2 {
+    max-width: 100%;
+    font-size: 2.8rem;
+  }
+
+  .tiles-banner {
+    width: 95vw;
+    padding: 5rem;
+  }
+
+  .tiles-banner h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  nav {
+    width: 95vw;
+    height: 6vh;
+    padding: 0 10px;
+  }
+
+  nav h3 {
+    font-size: 16px;
+  }
+
+  nav #buy {
+    padding: 4px 12px;
+    font-size: 14px;
+  }
+
+  .nav-icon img {
+    width: 2rem;
+  }
+
+  /* Hero Section */
+  #page1 video {
+    width: 90%;
+  }
+
+  #hero-content {
+    width: 50%;
+    gap: 15px;
+  }
+
+  #hero-content h3 {
+    font-size: 18px;
+  }
+
+  /* Foundation Content */
+  #foundation-content {
+    width: 90%;
+    gap: 30px;
+  }
+
+  #foundation-content h1 {
+    font-size: 4vh;
+    line-height: 1.2;
+  }
+
+  /* Product Tour */
+  .logo {
+    width: 50vw;
+    margin-bottom: 5vh;
+  }
+
+  #scroll-video {
+    width: 85%;
+  }
+
+  #product-btn {
+    font-size: 1.2em;
+    margin-top: 5rem;
+    padding: 8px 16px;
+  }
+
+  /* Learn More Sections */
+  .learn-more {
+    width: 90%;
+    padding-top: 3em;
+    padding-bottom: 5em;
+  }
+
+  .learn-more h2 {
+    font-size: 1.5rem;
+  }
+
+  .learn-more-section p {
+    font-size: 1.1em;
+  }
+
+  #learnmore-btn {
+    font-size: 1.1em;
+    margin-top: 2rem;
+    padding: 12px 16px;
+  }
+
+  /* Content Sections */
+  #entertainment-content,
+  #productivity-content,
+  #memories-content,
+  #connections-content,
+  #apps-content,
+  #visionOS-content {
+    width: 90%;
+  }
+
+  #entertainment-content h1,
+  #productivity-content h1,
+  #memories-content h1,
+  #connections-content h1,
+  #apps-content h1,
+  #visionOS-content h1 {
+    font-size: 2.5em;
+    max-width: 100%;
+    line-height: 1.1;
+  }
+
+  #entertainment-content p,
+  #productivity-content p,
+  #memories-content p,
+  #connections-content p,
+  #apps-content p,
+  #visionOS-content p {
+    font-size: 1.3em;
+  }
+
+  /* Design Section */
+  .design-content {
+    width: 90%;
+    padding: 5vh 0;
+  }
+
+  .design-content h1 {
+    font-size: 2.8em;
+    max-width: 100%;
+  }
+
+  .design-content h2 {
+    font-size: 1.4em;
+    max-width: 100%;
+  }
+
+  .design-content p {
+    font-size: 1.2em;
+    max-width: 100%;
+    margin-top: 2em;
+  }
+
+  /* Canvas Section - Adjust for mobile */
+  #canvas {
+    height: 100vh; /* Reduce height on mobile */
+  }
+
+  #canvas > canvas {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* Canvas Text Overlays - Reposition for mobile */
+  #cpage1,
+  #cpage2,
+  #cpage3,
+  #cpage4,
+  #cpage5,
+  #cpage6 {
+    height: 80vh; /* Reduce height */
+  }
+
+  #cpage1 > h1,
+  #cpage3 > h1,
+  #cpage4 > h1,
+  #cpage6 > h1 {
+    left: 5%;
+    max-width: 45%;
+    font-size: 1em;
+  }
+
+  #cpage2 > h1,
+  #cpage5 > h1 {
+    right: 5%;
+    max-width: 45%;
+    font-size: 1em;
+  }
+
+  /* Glass Side Images */
+  .glassside {
+    padding: 3rem 2rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .glasssideVid video {
+    width: 95%;
+  }
+
+  .subdesign-content {
+    max-width: 90%;
+    padding: 3rem 0;
+  }
+
+  .subdesign-content p {
+    font-size: 1.2em;
+  }
+
+  .subdesign img {
+    max-width: 90%;
+  }
+
+  .subdesign .btn {
+    bottom: 10%;
+    font-size: 1.1em;
+    padding: 12px 16px;
+  }
+
+  /* Technology Section */
+  .tech-ctx {
+    height: 200vh; /* Reduce height */
+  }
+
+  .technology-content {
+    padding: 5rem 0;
+  }
+
+  .technology h1 {
+    font-size: 2.5em;
+    max-width: 90%;
+    margin: 2rem 0;
+  }
+
+  .technology h2 {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .technology p {
+    font-size: 1.2em;
+    max-width: 90%;
+  }
+
+  .technology h3 {
+    font-size: 1.8rem;
+    max-width: 90%;
+    line-height: 2em;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    max-width: 90%;
+    line-height: 1.5rem;
+  }
+
+  #tech-canvas {
+    height: 150vh;
+  }
+
+  .technology-content3 {
+    top: -20%;
+    right: 5%;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .relative {
+    height: 60vh;
+  }
+
+  /* Eye Tracking */
+  .eye_tracking img {
+    width: 90%;
+  }
+
+  /* Sensors */
+  .sensors-section {
+    height: 60vh;
+    width: 90vw;
+  }
+
+  .gallery {
+    width: 100%;
+    margin: 5rem 0 0;
+  }
+
+  .sensor_chips {
+    height: 60vh;
+  }
+
+  .revolutionary-p {
+    width: 90%;
+  }
+
+  .learnmorewhite-btn {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* Values */
+  .values {
+    width: 90vw;
+    height: 80vh;
+    gap: 2rem;
+  }
+
+  .values h1 {
+    font-size: 2.5rem;
+    max-width: 100%;
+  }
+
+  .values p {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  /* Banners */
+  .banner1 {
+    width: 95vw;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+  }
+
+  .banner1 h2 {
+    font-size: 2rem;
+    max-width: 100%;
+    line-height: 1.1em;
+  }
+
+  .banner1 p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+  .shop-btn {
+    font-size: 1.3rem;
+  }
+
+  .tiles-banner {
+    width: 95vw;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+  }
+
+  .tiles-banner img {
+    width: 70%;
+  }
+
+  .tiles-banner h1 {
+    font-size: 2.2rem;
+    max-width: 100%;
+  }
+
+  .tiles-banner p {
+    font-size: 1.3rem;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer-section,
+  .footer-container,
+  .apple-vision-pro,
+  .footer-note,
+  .footer-bottom2 {
+    max-width: 90vw;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-column {
+    margin: 0;
+  }
+
+  .footer-content2 {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* Extra Small Mobile */
+@media screen and (max-width: 480px) {
+  /* Further reduce sizes for very small screens */
+  #foundation-content h1 {
+    font-size: 3.5vh;
+  }
+
+  #entertainment-content h1,
+  #productivity-content h1,
+  #memories-content h1,
+  #connections-content h1,
+  #apps-content h1,
+  #visionOS-content h1 {
+    font-size: 2em;
+  }
+
+  .design-content h1 {
+    font-size: 2.2em;
+  }
+
+  .technology h1 {
+    font-size: 2em;
+  }
+
+  .values h1 {
+    font-size: 2rem;
+  }
+
+  .banner1 h2 {
+    font-size: 1.8rem;
+  }
+
+  .tiles-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Canvas text adjustments for very small screens */
+  #cpage1 > h1,
+  #cpage2 > h1,
+  #cpage3 > h1,
+  #cpage4 > h1,
+  #cpage5 > h1,
+  #cpage6 > h1 {
+    font-size: 0.9em;
+    max-width: 50%;
+  }
+}
+
+/* Landscape Mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  #page1 video {
+    width: 70%;
+  }
+
+  #hero-content {
+    width: 40%;
+  }
+
+  #foundation-content h1 {
+    font-size: 3vh;
+  }
+
+  .logo {
+    width: 25vw;
+    margin-bottom: 3vh;
+  }
+
+  #scroll-video {
+    width: 60%;
+  }
+
+  #product-btn {
+    margin-top: 3rem;
+  }
+}
